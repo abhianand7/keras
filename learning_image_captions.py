@@ -1,6 +1,7 @@
-
 # Architecture for learning image captions with a convnet and a Gated Recurrent Unit:
-
+# (word-level embedding, caption of maximum length 16 words).
+# Note that getting this to work well will require using a bigger convnet,
+# initialized with pre-trained weights.
 
 from keras.models import Sequential
 from keras.layers import Dense, Convolution2D, Activation, MaxPooling2D, Flatten, \

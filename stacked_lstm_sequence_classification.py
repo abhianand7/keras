@@ -1,3 +1,10 @@
+# In this model, we stack 3 LSTM layers on top of each other,
+# making the model capable of learning higher-level temporal representations.
+# The first two LSTMs return their full output sequences,
+# but the last one only returns the last step in its output sequence,
+# thus dropping the temporal dimension (i.e. converting the input sequence into a single vector).
+
+
 from keras.models import Sequential
 from keras.layers import LSTM, Dense
 import numpy as np
